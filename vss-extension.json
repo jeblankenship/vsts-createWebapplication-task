@@ -1,8 +1,8 @@
 {
     "manifestVersion": 1,
-    "id": "createWebApplicationOnRemote",
+    "id": "createWebApplication",
     "name": "Create Web Application On Remote Computer",
-    "version": "0.1.0",
+    "version": "0.1.4",
     "public": true,
     "publisher": "docscode",
     "targets": [
