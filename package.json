@@ -1,0 +1,24 @@
+{
+  "name": "docsCode.vsts-createWebapplication-task",
+  "version": "0.1.0",
+  "description": "Build task for VS Team Services that creates web application in specified web site on remote computer.",
+  "author": "James Blankenship",
+  "license": "MIT",
+  "homepage": "https://github.com/jeblankenship/vsts-createWebapplication-task#readme",
+  "bugs": {
+    "url": "https://github.com/jeblankenship/vsts-createWebapplication-task/issues"
+  },
+  "keywords": [
+    "VSTS",
+    "release",
+    "build",
+    "token",
+    "rename"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeblankenship/vsts-createWebapplication-task.git"
+  },
+  "devDependencies": {
+  }
+}
