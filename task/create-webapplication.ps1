@@ -43,6 +43,14 @@ $command = {
         New-WebApplication -Name $webAppName -ApplicationPool $appPoolName  -Force -PhysicalPath $filePath  -Site $webSiteName 
         Write-Host "Created web application '$webAppName' in site '$webSiteName'"
     }
+    $currentAppPool = (Get-Item $webAppPath | Select applicationPool).applicationPool
+    Write-Host "Current Application Pool: $currentAppPool"
+    if ($appPoolName -ne $currentAppPool){
+        write-host "Changing Application Pool to $appPoolName"
+        Set-ItemProperty $webAppPath -name applicationPool  -value $appPoolName -force
+        $currentAppPool = (Get-Item $webAppPath | Select applicationPool).applicationPool
+        Write-Host "Current Application Pool: $currentAppPool"
+    }
     Write-Host "Create WebApplication Task Completed."
 }
 

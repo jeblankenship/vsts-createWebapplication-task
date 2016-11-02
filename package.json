@@ -1,6 +1,6 @@
 {
   "name": "docsCode.vsts-createWebapplication-task",
-  "version": "0.1.4",
+  "version": "0.1.8",
   "description": "Build task for VS Team Services that creates web application in specified web site on remote computer.",
   "author": "James Blankenship",
   "license": "MIT",
